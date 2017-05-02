@@ -84,3 +84,17 @@
        width: 100%;
    }
 }
+
+/* IDs made for ScrollSpy Navigation utilized to show different section backgrounds*/
+#gallery {
+  background-color: #fef5e7;
+}
+#products {
+  background-color: #a6cfd9;
+}
+#afterCare {
+  background-color: #fcf9e9;
+}
+#aboutUs{
+  background-color: #bce5f6;
+}
