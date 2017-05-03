@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <!-- 	Must Be Marian's HTML Template
 		 	Needs to be set so that there is an index.php file with tasks:
 				- check for login, if logged in display name in nav, not login form.
 				-
 -->
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Must Be Marian's</title>
@@ -38,10 +38,17 @@
 								<li> <a href="#afterCare"> After Care </a> </li>
 								<li> <a href="#aboutUs"> About Us </a> </li>
 							</ul>
+							
 							<form class="navbar-form navbar-right">
-								<a href="/cart/" class="btn btn-info btn-md">
-				          <span class="glyphicon glyphicon-shopping-cart"></span>
-				        </a>
+								<div class="form-group">
+									<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+										<input type="hidden" name="cmd" value="_s-xclick">
+										<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+										">
+										<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+										<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+									</form>
+								</div>
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="Username">
 								</div>
@@ -49,6 +56,7 @@
 									<input type="text" class="form-control" placeholder="Password">
 								</div>
 								<button type="submit" class="btn btn-default">Login</button>
+							</form>
 						</div>
 					</nav>
 				</div>
@@ -169,7 +177,18 @@
 				      <div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -187,7 +206,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Earrings $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -205,7 +235,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -225,7 +266,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -243,7 +295,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -261,7 +324,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -281,7 +355,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -299,7 +384,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
@@ -317,7 +413,18 @@
 							<div class="caption">
 				        <h3>Thumbnail label</h3>
 				        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				        <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+				        <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="JDLJW8AKZR27L">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Name of drop-down menu"></td></tr><tr><td><select name="os0">
+							<option value="Option 1">Necklace $0.01 USD</option>
+							</select> </td></tr>
+							</table>
+							<input type="hidden" name="currency_code" value="USD">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form></p>
 				      </div>
 							<div id="myModal" class="modal">
 							  <!-- The Close Button -->
